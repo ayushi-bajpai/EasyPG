@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        input,
+        select,
+        textarea {
+            width: 100%;
+            /* Full width */
+            padding: 12px;
+            /* Some padding */
+            border: 1px solid #ccc;
+            /* Gray border */
+            border-radius: 4px;
+            /* Rounded borders */
+            box-sizing: border-box;
+            /* Make sure that padding and width stays in place */
+            margin-top: 6px;
+            /* Add a top margin */
+            margin-bottom: 16px;
+            /* Bottom margin */
+            resize: vertical
+                /* Allow the user to vertically resize the textarea (not horizontally) */
+        }
+
+        /* Style the submit button with a specific background color etc */
+        input[type=submit] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        /* When moving the mouse over the submit button, add a darker green color */
+        input[type=submit]:hover {
+            background-color: #45a049;
+
+        }
+
+        /* Add a background color and some padding around the form */
+        .container {
+            border-radius: 5px;
+            background-color: #f2f2f2;
+            padding: 20px;
+        }
+
+        label {
+            margin-top: 6px;
+            /* Add a top margin */
+            margin-bottom: 16px;
+        }
+    </style>
+</head>
+<legend>Landlord Details</legend>
+<div class="container">
+    <form action="/complaint" method="POST">
+        <label for="name">Name</label><input id="name" type="text" name="name" placeholder="Your Name">
+        <label for="Address">Address</label><textarea rows="4" cols="50"></textarea>
+        <label for="State">State</label><input id="State" type="text" name="State" placeholder="Your State.."><br>
+        <label for="Pin Code">Pincode</label><input id="pin" type="number" name="pin" placeholder="Your Pincode.."><br>
+        <label for="Email">Email</label><input id="email" type="email" name="email" placeholder="Your Email.."><br>
+        <label for="DOB">DOB</label><input id="DOB" type="date" name="DOB"><br>
+        <label for="Phone">Phone</label><input id="phone" type="number" name="phone"
+            placeholder="Your phone number"><br>
+        <label for="fname">Father's Name</label> <input id="fname" type="text" name="fname">
+        <label for="mname">Mother's Name</label> <input id="mname" type="text" name="mname">
+        <label for="password">Password</label> <input type="password" name="password">
+        <label for="typeofpg">Type of PG</label> <input type="text" name="occupation" placeholder="Furnished/Semi Furnished/NotFurnished">
+        <label for="addr">Address</label> <input type="text" name="addr">
+        <label for="rent">Rent Per Month</label> <input type="number" name="rent">
+        <label for="food">Food Services</label> <input type="text" name="food" placehoder="Yes/no">
+        <label for="ac">AC Services</label> <input type="text" name="ac" placehoder="Yes/no">
+        <label for="kitchen">Kitchen Provided</label> <input type="text" name="kitchen" placehoder="Yes/no">
+        <label for="househelp">Househelp/Cleaning Staff Provided</label> <input type="text" name="Househelp" placehoder="Yes/no">
+
+
+
+
+
+        <input style="width: 80px;" type="submit" value="Submit" id="submit">
+    </form>
+</div>
